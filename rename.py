@@ -7,6 +7,7 @@ import os
 # Function to rename multiple files
 def main():
 
+# You need to escape the backslashes in the path
 	folder = "C:\\Users\\nate\\Pictures\\iCloud Photos\\Photos\\2022"
 	for count, filename in enumerate(os.listdir(folder)):
 		dst = f"2022 {str(count)}.jpg"
